@@ -47,4 +47,5 @@ streamlit.text(my_data_row)
 
 #
 add_choice= streamlit.text_input('What fruit would you like to add?', 'Insert fruit', on_change= add_function)
-add_function= cnx.execute("insert into fruit_load_list value (FRUIT_NAME)"+"("+add_choice+")")                                
+def add_function:
+  cnx.execute("insert into fruit_load_list value (FRUIT_NAME)"+"("+add_choice+")")                                
