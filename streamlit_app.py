@@ -48,4 +48,4 @@ streamlit.text(my_data_row)
 #
 add_choice= streamlit.text_input('What fruit would you like to add?', 'Insert fruit')
 
-my_cur.execute("TRUNCATE TABLE FRUIT_LOAD_LIST")                                
+my_cur.execute("INSERT INTO FRUIT_LOAD_LIST(FRUIT_NAME) VALUES('jackfruit', 'papaya', 'guava','kiwi')")                                
