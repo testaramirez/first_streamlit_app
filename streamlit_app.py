@@ -47,5 +47,5 @@ streamlit.text(my_data_row)
 
 #
 add_choice= streamlit.text_input('What fruit would you like to add?', 'Insert fruit')
-funct_value= "INSERT INTO FRUIT_LOAD_LIST (FRUIT_NAME) VALUES ('"+add_choice.value+"')"
-my_cur.execute(funct_value.value)                                
+
+my_cur.execute("TRUNCATE TABLE FRUIT_LOAD_LIST")                                
